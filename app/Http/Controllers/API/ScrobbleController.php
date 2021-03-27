@@ -17,7 +17,7 @@ class ScrobbleController extends Controller
     /** @var User */
     private $currentUser;
 
-    public function __construct(LastfmService $lastfmService, Authenticatable $currentUser)
+    public function __construct(LastfmService $lastfmService, ?Authenticatable $currentUser)
     {
         $this->lastfmService = $lastfmService;
         $this->currentUser = $currentUser;
